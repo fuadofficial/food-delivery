@@ -1,0 +1,77 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* header section */
+.heading {
+  width: 100%;
+  height: 80px;
+  padding: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.heading .logo img {
+  width: 100%;
+  height: 30px;
+}
+.heading .links a {
+  text-decoration: none;
+  color: rgb(105, 105, 231);
+  margin: 0 10px;
+  font-size: 15px;
+}
+.heading .links .order {
+  font-weight: bold;
+}
+.heading .links .sign {
+  border: 1px solid rgb(174, 174, 243);
+  padding: 10px;
+  border-radius: 30px;
+}
+.heading .links .sign:hover {
+  color: black;
+  border: 1px solid blue;
+}
+
+/* home-container */
+
+.home .home-container-fluid {
+  background-image: url("./img/home1.webp");
+  width: 100%;
+  height: 400px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.home .home-container-fluid h1 {
+  font-size: 40px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+.home .home-container-fluid .form{
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 30px;
+}
+.home .home-container-fluid input{
+    width: 500px;
+    outline: none;
+    border: none;
+}
+/* Styles for small screens */
+@media (max-width: 990px) {
+  .home .home-container-fluid {
+    background-image: url("./img/home2.webp");
+  }
+}
+@media (min-width: 760px) {
+  .heading .logo img {
+    height: 40px;
+  }
+}
