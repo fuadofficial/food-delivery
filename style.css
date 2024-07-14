@@ -83,7 +83,7 @@
   border-right: black;
   font-size: 15px;
 }
-.home .home-container-fluid input i:hover{
+.home .home-container-fluid input i:hover {
   color: #4212f1;
 }
 .home .home-container-fluid button {
@@ -96,7 +96,7 @@
   font-size: 15px;
   font-weight: bold;
 }
-.home .home-container-fluid button:hover{
+.home .home-container-fluid button:hover {
   background-color: #4212f1;
 }
 
@@ -106,18 +106,79 @@
   text-align: center;
   width: 100%;
   height: 500px;
+  margin: 20px 0px;
+  padding: 20px;
 }
-.services .cards{
+.services .header {
+  font-weight: bold;
+  margin: 10px auto;
+  font-size: 55px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+.services .cards {
   display: flex;
   align-items: center;
   justify-content: space-around;
 }
-.services .cards .card{
-  width: 200px;
-  height: 400px;
+.services .cards .card {
+  width: 350px;
+  text-align: center;
 }
-.services .cards .card .img img{
- width: 100%;
+.services .cards .card .content h2 {
+  font-size: 25px;
+  margin-bottom: 10px;
+}
+.services .cards .card .content p {
+  font-size: 18px;
+  color: rgb(124, 121, 121);
+}
+.services .cards .card .img {
+  margin: 0px auto;
+  width: 200px;
+  height: 180px;
+  padding: 20px;
+}
+.services .cards .card .img img {
+  width: 100%;
+}
+.services .cards .card .img .car-img {
+  margin-top: 40px;
+}
+
+/* <!-- start review  seciton --> */
+
+.reviw-section {
+  margin: 20px 0px;
+  width: 100%;
+  height: 500px;
+  padding: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.reviw-section .content {
+  width: 30%;
+}
+.reviw-section .content h1 {
+  font-size: 30px;
+  font-weight: 1000;
+  margin-bottom: 10px;
+}
+.reviw-section .content p {
+  letter-spacing: 0.5px;
+  font-size: 20px;
+}
+.reviw-section .img {
+  width: 50%;
+  height: 500px;
+  position: relative;
+}
+.reviw-section .img .mmm {
+  position: absolute;
+  width: 300px;
+  top: 230px;
+  left: -100px;
 }
 
 /* Styles for small screens */
@@ -141,7 +202,7 @@
     padding: 8px 12px;
     border-radius: 30px;
   }
-  .navbar .sign:hover{
+  .navbar .sign:hover {
     border: 1px solid blue;
   }
   .navbar .logo {
@@ -175,8 +236,43 @@
     padding: 13px 17px;
     border-radius: 30px;
   }
-  .sub-navbar .order:hover{
+  .sub-navbar .order:hover {
     border: 1px solid blue;
+  }
+
+  /* <!-- start services and cards seciton for small screen --> */
+
+  .services .header {
+    font-size: 30px;
+  }
+  .services .cards {
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* <!-- start review  seciton for small screen --> */
+
+  .reviw-section {
+    display: flex;
+    flex-direction: column;
+    margin-top: 400px;
+  }
+  .reviw-section .content {
+    width: 90%;
+  }
+  .reviw-section .content p {
+    letter-spacing: 0.5px;
+    font-size: 20px;
+    margin-top: 20px;
+  }
+  .reviw-section .img {
+    width: 60%;
+    margin-top: 20px;
+    height: 500px;
+    position: relative;
+  }
+  .reviw-section .img .mmm {
+    left: -90px;
   }
 }
 
@@ -184,7 +280,7 @@
   .home .home-container-fluid {
     background-image: url("./img/home2.webp");
   }
-  .home .home-container-fluid .input-btn{
+  .home .home-container-fluid .input-btn {
     flex-direction: column;
   }
   .home .home-container-fluid input {
@@ -195,6 +291,9 @@
   }
   .home .home-container-fluid h1 {
     width: 70%;
+    font-size: 40px;
+  }
+  .services .header {
     font-size: 40px;
   }
 }
