@@ -41,6 +41,7 @@ A sleek and responsive food delivery website designed and developed using only H
 
 
 
+
 **Pure HTML & CSS:** The entire website is built using just HTML and CSS, demonstrating a focus on fundamental web development skills.
 
 
